@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
         when(event?.action){
             //画面をタッチした時、画像をcat02に変更する
             MotionEvent.ACTION_DOWN -> iv.setImageResource(R.drawable.cat02)
-            //画面をタッチした時、画像をcat02に変更する
+            //画面をタッチしてスライドした時、画像をcat03に変更する
             MotionEvent.ACTION_MOVE -> iv.setImageResource(R.drawable.cat03)
-            //画面をタッチした時、画像をcat02に変更する
+            //画面から離した時、画像をcat01に変更する
             MotionEvent.ACTION_UP   -> iv.setImageResource(R.drawable.cat01)
         }
         return super.onTouchEvent(event)
